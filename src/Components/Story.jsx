@@ -21,11 +21,11 @@ let Images = [
         name: 'Lobo'
     },
     {
-        image: 'Images/Profiles/LogoMeuLoto.jpeg',
+        image: 'Images/Profiles/LogoMeuLoro.jpeg',
         name: 'MeuLoro'
     },
     {
-        image: 'Images/Profiles/Miaugnifico.jpg',
+        image: 'Images/Profiles/LogoMiaugnifico.jpg',
         name: 'Miaugnifico'
     },
     {

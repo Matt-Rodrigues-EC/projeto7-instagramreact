@@ -1,54 +1,72 @@
-.NavBar{
-    position: -webkit-sticky;
+.BackPage{
+    box-sizing: border-box;
     display: flex;
     width: auto;
+    height: auto;
+    background-color: #f3f3f3;
+}
+
+.ContentCenter{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin:  0 auto 0 150px;
+    position: relative;
+}
+
+.NavBar{
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    width: 100vw;
     height: 54px;
-    margin: auto;
-    padding: 0 100px;
-
-    justify-content: space-between;
-    align-items: center;
-
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
     border: 1px solid #DBDBDB;
+    justify-content: space-around;
 }
-
-.icon{
-    width: 17px;
-}
-
 .Logo{
     display: flex;
-    width: 150px;
-
-    justify-content: space-between;
+    align-items: center;
 }
 
 .LogoImg{
-    width: 20px;
+    width: 29px;
+    margin: 0 15px;
 }
-
 .LogoName{
+    margin-left: 10px;
     width: 103px;
-    height: 29px;
+    padding-top: 3px;
 }
 
 .Buscar{
+    margin-top: 13px;
     width: 215px;
     height: 28px;
+    text-align: center;
 
-    background-color: #FAFAFA;
-
+    background: #FAFAFA;
     border: 1px solid #DBDBDB;
     border-radius: 3px;
-    text-align: center;
 }
-
-.InteractionBox{
-    display: flex;
-    width: 115px;
-    gap: 25px;
+.iconDirect{
+    display: none;
 }
-
+.interectionBox{
+    margin-top: 7px;
+}
+.icon{
+    height: 20px;
+    width: 20px;
+    margin: 10px 5px;
+}
+.iconDirect{
+    height: 20px;
+    width: 20px;
+    margin: 10px 5px;
+}
 .StoryBox{
     width: 614px;
     max-width: 614px;
@@ -57,32 +75,40 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    overflow-y: auto;
-    overflow-x: hidden;
-    scrollbar-width: none;
+    position: relative;
+    overflow-x: scroll;
+
     box-sizing: border-box;
-    margin: 34px auto 0 auto;
 
     background: #FFFFFF;
     border: 1px solid #DBDBDB;
     border-radius: 3px;
 }
 
+.StoryBox::-webkit-scrollbar{
+    display: none;
+}
+
 .Story{
-    display: flex;
-    flex-direction: column;
-    padding: 15px 0  15px 15px;
-    align-items: center;
+    display: flexbox;
+    min-width: 66px;
+    height: 86px;
+    justify-content: center;
+    margin-left: 19px;
+    margin-top: 10px;
+    background-image: url('../Images/stories_background\ 1.png');
+    background-repeat: no-repeat;
+    margin: 15px 0 15px 15px;
 }
-
 .StoryIMG{
-    width: 56px;
+    position: relative;
     height: 56px;
-
+    width: 56px;
     border-radius: 50%;
+    left: 5px;
+    top: 5px;
 }
-
-.StoryName{
+.NameStory{
     position: relative;
     top: 4px;
     text-align: center;
@@ -91,4 +117,345 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+}
+button{
+    position: absolute;
+    right: 10px;
+    top: 35%;
+    display: flex;
+    border: none;
+    background-color: transparent;
+    align-items: center;
+    color: black;
+}
+.ButtonIcon{
+    box-sizing: border-box;
+    display: block;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+}
+
+.ColumnPostBox{
+    box-sizing: border-box;
+    background-color: f3f3f3;
+    margin-top: 24px;
+    width: 614px;
+    height: auto;
+    left: 143px;
+}
+.PostBox{
+    box-sizing: border-box;
+    margin-top: 24px;
+    margin-bottom: 60px;
+    border: 1px solid #DBDBDB;
+    background-color: #FFFFFF;
+}
+.PostUp{
+    display: flex;
+}
+.PostLogo{
+    height: 32px;
+    width: 32px;
+    border-radius: 50px;
+    margin: 17px 15px;
+}
+.PostTextUp{
+    margin-top: 25px;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.PostContent{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.ImagePost{
+    box-sizing: border-box;
+    width: 100%;
+}
+.PostBotton{
+    display: flex;
+    margin:13.44px 17.81px;
+    align-items: center;
+}
+.PostReview{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    margin-left: 5px;
+}
+.iconsPost{
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+}
+.Liker{
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+}
+
+.SidebarBox{
+    position: fixed;
+    box-sizing: border-box;
+    width: 293px;
+    height: 274px;
+    margin-top: 80px;
+    margin-left: 630px;
+}
+.SideBoxImg{
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+    margin: 17px;
+}
+.UpSideBox{
+    display: flex;
+    align-items: center;
+}
+.TextUpSideBox{
+    margin: 0%;
+}
+.ProfileName{
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.NameAcount{
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 0;
+}
+.Sugestion{
+    display: flex;
+    align-items: initial;
+    justify-content: space-between;
+}
+.SideSugestions{
+    margin: 0 0 0 17px;
+    font-weight: 500;
+    color: #8E8E8E;
+    ;
+}
+.Vertudo{
+    display: flex;
+    margin: 0;
+    color: #262626;
+    font-weight: 500;
+    justify-self: right;
+}
+.SugestionBox{
+    display: flex;
+    justify-content: space-between;
+    max-height: 32px;
+    margin: 16px 0 0 16px;
+}
+.Acount{
+    display: flex;
+    align-items: center;
+}
+.Address{
+    margin-left: 11px;
+}
+.ImgSugestion{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+.Profile{
+    margin: 1px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.Name{
+    margin: 1px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.Follow{
+    color: #139EF2;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.Infos{
+    margin-left: 16px;
+    color: #C7C7C7;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+
+a{
+    color: inherit;
+    text-transform: none;
+    text-decoration: none;
+    align-self: center;
+}
+
+.BottonNav{
+    display: none;
+}
+
+@media(max-width: 935px){
+    .SidebarBox{
+        display: none;
+    }
+
+    .ContentCenter{
+        margin: auto;
+    }
+
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    .Nav{
+        position: -webkit-sticky;
+        width: 100vw;
+    }
+    .LogoInstagram{
+        display: flex;
+        margin-left: 1rem;
+        align-self: center;
+        height: inherit;
+    }
+    .Buscar{
+
+        width: 215px;
+        height: 26px;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #979797;
+    }
+    .interectionBox{
+        display: flex;
+        margin-top: 1%;
+        margin-right: 1%;
+    }
+    .iconDirect{
+        display: none;
+    }
+    .BackPage{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 614px){
+    body{
+        display: flex;
+        justify-content: center;
+    }
+
+    .ContentCenter{
+        margin: auto;
+    }
+
+    .BackPage{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+    }
+    
+    .SidebarBox{
+        display: none;
+    }
+    .Nav{
+        position: fixed;
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1;
+
+    }
+    .LogoInstagram{
+        display: flex;
+        width: 60%;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-left: 0;
+        align-items: center;
+    }
+    .LogoImg{
+        margin: 0 10px;
+    }
+    hr{
+        display: none;
+    }
+    .LogoName{
+        margin: 0;
+    }
+    .Buscar{
+        display: none;
+    }
+    
+    .interectionBox{
+        margin: 0 10px;
+    }
+    .StoryBox{
+        display: flex;
+        background-color: transparent;
+        margin-top: 45px;
+        border: none;
+        align-items: center;
+        width: 100vw;
+    }
+    .BoxStory{
+        margin-top: 0;
+    }
+    .icon{
+        display: none;
+    }
+    .iconDirect{
+        display: flex;
+    }
+    button{
+        display: none;
+    }
+    .ColumnPostBox{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        margin-top: 0;
+    }
+    .PostBox{
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .ImagePost{
+        width: max-content;
+        width: 100vw;
+    }
+    .BottonNav{
+        position: fixed;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        height: 54px;
+        left: 0;
+        bottom: 0;
+
+        background: #FFFFFF;
+        border: 1px solid #DBDBDB;
+    }
+    .iconBottonNav{
+        height: 20px;
+        width: 20px;
+        margin: 10px 5px;
+    }
+    
 }
