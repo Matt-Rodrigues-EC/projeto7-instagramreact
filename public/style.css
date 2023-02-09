@@ -1,0 +1,94 @@
+.NavBar{
+    position: -webkit-sticky;
+    display: flex;
+    width: auto;
+    height: 54px;
+    margin: auto;
+    padding: 0 100px;
+
+    justify-content: space-between;
+    align-items: center;
+
+    border: 1px solid #DBDBDB;
+}
+
+.icon{
+    width: 17px;
+}
+
+.Logo{
+    display: flex;
+    width: 150px;
+
+    justify-content: space-between;
+}
+
+.LogoImg{
+    width: 20px;
+}
+
+.LogoName{
+    width: 103px;
+    height: 29px;
+}
+
+.Buscar{
+    width: 215px;
+    height: 28px;
+
+    background-color: #FAFAFA;
+
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.InteractionBox{
+    display: flex;
+    width: 115px;
+    gap: 25px;
+}
+
+.StoryBox{
+    width: 614px;
+    max-width: 614px;
+    height: 118px;
+    margin-top: 88px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    box-sizing: border-box;
+    margin: 34px auto 0 auto;
+
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+}
+
+.Story{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0  15px 15px;
+    align-items: center;
+}
+
+.StoryIMG{
+    width: 56px;
+    height: 56px;
+
+    border-radius: 50%;
+}
+
+.StoryName{
+    position: relative;
+    top: 4px;
+    text-align: center;
+    margin: 0;
+    max-width: 78px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
