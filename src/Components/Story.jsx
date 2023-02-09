@@ -39,8 +39,6 @@ let Images = [
 ]
 
 export default function Story(){
-
-
     return (
         Images.map((story) => {
             return(

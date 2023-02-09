@@ -1,11 +1,11 @@
 import NavBar from './Components/NavBar';
-import StoryBox from './Components/StoryBox';
+import BackPage from './Components/BackPage';
 
 export default function App(){
     return (
         <>
             <NavBar/>
-            <StoryBox/>
+            <BackPage/>
         </>
     )
 }
