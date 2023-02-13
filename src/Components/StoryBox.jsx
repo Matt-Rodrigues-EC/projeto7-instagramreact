@@ -1,9 +1,9 @@
-import Story from "./Story"
+import Stories from "./Stories"
 
 export default function StoryBox() {
     return (
         <div className="StoryBox">
-            <Story/>
+            <Stories/>
         </div>
     )
 }
