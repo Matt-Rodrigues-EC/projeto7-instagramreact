@@ -230,6 +230,11 @@ button{
     font-size: 14px;
     margin-top: 0;
 }
+.edit{
+    display: flex;
+    margin-left: 10px;
+    width: 20px;
+}
 .Sugestion{
     display: flex;
     align-items: initial;

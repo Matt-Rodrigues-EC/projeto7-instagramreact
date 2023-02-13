@@ -1,18 +1,10 @@
-
+import Usuario from "./Usuario"
 
 export default function SideBar(){
     return(
         <div class="SidebarBox">
             <div class="UpSideBox">
-                <img class="SideBoxImg" src="../assets/Profiles/LogoMiaugnifico.jpg" alt=""/>
-                <div class="TextUpSideBox">
-                    <p class="ProfileName">
-                        Miaugnifico
-                    </p>
-                    <p class="NameAcount">
-                        MeuGato
-                    </p>
-                </div>
+            <Usuario image="assets/Profiles/LogoMiaugnifico.jpg"  user="Miaugnifico" name="MeuGato"/>
             </div>
             <div class="Sugestion">
                 <p class="SideSugestions">Sugestões para você</p>
@@ -69,6 +61,7 @@ export default function SideBar(){
                 <p class="Follow">Seguir</p>
             </div>
             <div class="Infos">
+                <br/>
                 <p>Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade •
                     Termos • Localizações • Contas mais relevantes • Hashtags • 
                     Idioma</p>
