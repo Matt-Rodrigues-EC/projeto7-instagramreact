@@ -67,7 +67,7 @@ export default function Post(){
                         </div>
                         <div className="PostBotton">
                             <img src={post.liker} className="Liker" alt=""/>
-                            <span className="PostReview" data-test="likes-number"> curtido por <strong>Gatastico</strong> e <strong> outras {cont} pessoas</strong></span>
+                            <span className="PostReview" > curtido por <strong>Gatastico</strong> e <strong> outras <span data-test="likes-number"> {cont} </span> pessoas</strong></span>
                         </div>
                 </div>
                 )})
