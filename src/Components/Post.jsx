@@ -2,32 +2,32 @@
 
 let Posts = [
     {
-        profile: "Images/Profiles/LogoMiaugnifico.jpg",
+        profile: "assets/Profiles/LogoMiaugnifico.jpg",
         name: "Miaugnifico",
         link: "http://localhost:3000",
-        image: "Images/imagem-de-gatinho-fofo.jpg", 
-        liker: "Images/Profiles/LogoGatastico.png"
+        image: "assets/imagem-de-gatinho-fofo.jpg", 
+        liker: "assets/Profiles/LogoGatastico.png"
     },
     {
-        profile: "Images/Profiles/LogoGatastico.png",
+        profile: "assets/Profiles/LogoGatastico.png",
         name: "Gatastico",
         link: "http://localhost:3000",
-        image: "Images/ComoGato.jpeg", 
-        liker: "Images/Profiles/LogoMiaugnifico.jpg"
+        image: "assets/ComoGato.jpeg", 
+        liker: "assets/Profiles/LogoMiaugnifico.jpg"
     },
     {
-        profile: "Images/Profiles/LogoHusky.jpg",
+        profile: "assets/Profiles/LogoHusky.jpg",
         name: "ILoveHusky",
         link: "http://localhost:3000",
-        image: "Images/siberian_husky_cute_puppies.jpg", 
-        liker: "Images/Profiles/LogoGatastico.png"
+        image: "assets/siberian_husky_cute_puppies.jpg", 
+        liker: "assets/Profiles/LogoGatastico.png"
     },
     {
-        profile: "Images/Profiles/LogoDoggie.jpg",
+        profile: "assets/Profiles/LogoDoggie.jpg",
         name: "Doggie",
         link: "http://localhost:3000",
-        image: "Images/photo-1615751072497-5f5169febe17.jpeg", 
-        liker: "Images/Profiles/LogoGatastico.png"
+        image: "assets/photo-1615751072497-5f5169febe17.jpeg", 
+        liker: "assets/Profiles/LogoGatastico.png"
     }
 ]
 
@@ -52,10 +52,10 @@ export default function Post(){
                             <img src={post.image} className="ImagePost" alt="" />
                         </div>
                         <div className="PostBotton">
-                            <img src="../Images/coracao.png" className="iconsPost" alt="Simbolo de Like"/>
-                            <img src="../Images/bate-papo.png" className="iconsPost" alt="Simbolo de Bate-Papo"/>
-                            <img src="../Images/instagram-direto.png" className="iconsPost" alt="Simbolo de Direct"/>
-                            <img src="../Images/salvar-instagram.png" className="iconsPost" alt="Simbolo de Salvar"/>
+                            <img src="../assets/coracao.png" className="iconsPost" alt="Simbolo de Like"/>
+                            <img src="../assets/bate-papo.png" className="iconsPost" alt="Simbolo de Bate-Papo"/>
+                            <img src="../assets/instagram-direto.png" className="iconsPost" alt="Simbolo de Direct"/>
+                            <img src="../assets/salvar-instagram.png" className="iconsPost" alt="Simbolo de Salvar"/>
                         </div>
                         <div className="PostBotton">
                             <img src={post.liker} className="Liker" alt=""/>

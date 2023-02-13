@@ -4,7 +4,7 @@ export default function SideBar(){
     return(
         <div class="SidebarBox">
             <div class="UpSideBox">
-                <img class="SideBoxImg" src="../Images/Profiles/LogoMiaugnifico.jpg" alt=""/>
+                <img class="SideBoxImg" src="../assets/Profiles/LogoMiaugnifico.jpg" alt=""/>
                 <div class="TextUpSideBox">
                     <p class="ProfileName">
                         Miaugnifico
@@ -20,7 +20,7 @@ export default function SideBar(){
             </div>
             <div class="SugestionBox">
                 <div class="Acount">
-                    <img class="ImgSugestion" src="../Images/Profiles/LogoJuliano.jpg" alt=""/>
+                    <img class="ImgSugestion" src="../assets/Profiles/LogoJuliano.jpg" alt=""/>
                     <div class="Address">
                         <p class="Profile">MacacoJuliano</p>
                         <p class="Name">Segue Você</p>
@@ -30,7 +30,7 @@ export default function SideBar(){
             </div>
             <div class="SugestionBox">
                 <div class="Acount">
-                    <img class="ImgSugestion" src="../Images/Profiles/LogoOrca.jpg" alt=""/>
+                    <img class="ImgSugestion" src="../assets/Profiles/LogoOrca.jpg" alt=""/>
                     <div class="Address">
                         <p class="Profile">Institudo Orca</p>
                         <p class="Name">Segue Você</p>
@@ -40,7 +40,7 @@ export default function SideBar(){
             </div>
             <div class="SugestionBox">
                 <div class="Acount">
-                    <img class="ImgSugestion" src="../Images/Profiles/LogoLobo.jpg" alt=""/>
+                    <img class="ImgSugestion" src="../assets/Profiles/LogoLobo.jpg" alt=""/>
                     <div class="Address">
                         <p class="Profile">SantuarioLobo</p>
                         <p class="Name">Segue Você</p>
@@ -50,7 +50,7 @@ export default function SideBar(){
             </div>
             <div class="SugestionBox">
                 <div class="Acount">
-                    <img class="ImgSugestion" src="../Images/Profiles/LogoMeuLoro.jpeg" alt=""/>
+                    <img class="ImgSugestion" src="../assets/Profiles/LogoMeuLoro.jpeg" alt=""/>
                     <div class="Address">
                         <p class="Profile">GeraldoPapagaio</p>
                         <p class="Name">Segue Você</p>
@@ -60,7 +60,7 @@ export default function SideBar(){
             </div>
             <div class="SugestionBox">
                 <div class="Acount">
-                    <img class="ImgSugestion" src="../Images/Profiles/LogoTatuDoBem.jpg" alt=""/>
+                    <img class="ImgSugestion" src="../assets/Profiles/LogoTatuDoBem.jpg" alt=""/>
                     <div class="Address">
                         <p class="Profile">TatuDoBem</p>
                         <p class="Name">Segue Você</p>

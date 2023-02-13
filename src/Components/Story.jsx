@@ -1,39 +1,39 @@
 
 let Images = [
     {
-        image: 'Images/Profiles/LogoGatastico.png',
+        image: 'assets/Profiles/LogoGatastico.png',
         name: 'Gatastico'
     },
     {
-        image: 'Images/Profiles/LogoDoggie.jpg',
+        image: 'assets/Profiles/LogoDoggie.jpg',
         name: 'Doggie'
     },
     {
-        image: 'Images/Profiles/LogoHusky.jpg',
+        image: 'assets/Profiles/LogoHusky.jpg',
         name: 'ILoveHusky'
     },
     {
-        image: 'Images/Profiles/LogoJuliano.jpg',
+        image: 'assets/Profiles/LogoJuliano.jpg',
         name: 'Juliano'
     },
     {
-        image: 'Images/Profiles/LogoLobo.jpg',
+        image: 'assets/Profiles/LogoLobo.jpg',
         name: 'Lobo'
     },
     {
-        image: 'Images/Profiles/LogoMeuLoro.jpeg',
+        image: 'assets/Profiles/LogoMeuLoro.jpeg',
         name: 'MeuLoro'
     },
     {
-        image: 'Images/Profiles/LogoMiaugnifico.jpg',
+        image: 'assets/Profiles/LogoMiaugnifico.jpg',
         name: 'Miaugnifico'
     },
     {
-        image: 'Images/Profiles/LogoOrca.jpg',
+        image: 'assets/Profiles/LogoOrca.jpg',
         name: 'Orca'
     },
     {
-        image: 'Images/Profiles/LogoTatuDoBem.jpg',
+        image: 'assets/Profiles/LogoTatuDoBem.jpg',
         name: 'TatuDoBem'
     }
 ]
