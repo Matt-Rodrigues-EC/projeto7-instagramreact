@@ -1,4 +1,4 @@
-
+import { useState } from "react"
 
 let Posts = [
     {
@@ -31,13 +31,19 @@ let Posts = [
     }
 ]
 
+
+
 export default function Post(){
+
+    const [cont, setCont] = useState(0);
+    const [imgprofile, setImgProfile] = useState();
+
     return(
         Posts.map((post) => {
             return(
                 <div className="PostBox" data-test="post">
                     <div className="PostUp">
-                            <img src={post.profile} className="PostLogo" alt="" data-test="post-image"/>
+                            <img src={imgprofile} className="PostLogo" alt="" data-test="post-image" onClick={() => {setImgProfile(prompt("Insira  anova URL."))}}/>
                             <div className="PostTextUp">
                                 <span>
                                     <a href={post.link}>
@@ -49,19 +55,19 @@ export default function Post(){
                             </div>
                         </div>
                         <div className="PostContent">
-                            <img src={post.image} className="ImagePost" alt="" />
+                            <img src={post.image} className="ImagePost" alt="" onClick={() => {setCont(cont + 1)}}/>
                         </div>
-                        <div className="PostBotton">
+                        <div className="PostBottonIcons">
                             <div>
-                                <img src="../assets/coracao.png" className="iconsPost" alt="Simbolo de Like"/>
+                                <img src="../assets/coracao.png" className="iconsPost" alt="Simbolo de Like" data-test="like-post" onClick={() => {}}/>
                                 <img src="../assets/bate-papo.png" className="iconsPost" alt="Simbolo de Bate-Papo"/>
                                 <img src="../assets/instagram-direto.png" className="iconsPost" alt="Simbolo de Direct"/>
                             </div>
-                            <img src="../assets/salvar-instagram.png" className="iconsPost" alt="Simbolo de Salvar"/>
+                            <img src="../assets/salvar-instagram.png" className="iconsPost" alt="Simbolo de Salvar" data-test="save-post"/>
                         </div>
                         <div className="PostBotton">
                             <img src={post.liker} className="Liker" alt=""/>
-                            <span className="PostReview" data-test="likes-number"> curtido por <strong>Gatastico</strong> e <strong> outras 2.500 pessoas</strong></span>
+                            <span className="PostReview" data-test="likes-number"> curtido por <strong>Gatastico</strong> e <strong> outras {cont} pessoas</strong></span>
                         </div>
                 </div>
                 )})

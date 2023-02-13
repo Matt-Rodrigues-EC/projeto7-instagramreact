@@ -176,11 +176,16 @@ button{
     box-sizing: border-box;
     width: 100%;
 }
-.PostBotton{
+.PostBottonIcons{
     display: flex;
     margin:13.44px 17.81px;
     align-items: center;
     justify-content: space-between;
+}
+.PostBotton{
+    display: flex;
+    margin:13.44px 17.81px;
+    align-items: center;
 }
 .PostReview{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
